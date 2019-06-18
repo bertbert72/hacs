@@ -6,12 +6,12 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         
         
-        
-        <link rel="shortcut icon" href="/hacs/img/favicon.ico">
-        <title>HACS</title>
-        <link href="/hacs/css/bootstrap-custom.min.css" rel="stylesheet">
-        <link href="/hacs/css/font-awesome.min.css" rel="stylesheet">
-        <link href="/hacs/css/base.css" rel="stylesheet">
+        <link rel="canonical" href="https://custom-components.github.io/hacs/developer/integration/">
+        <link rel="shortcut icon" href="../../img/favicon.ico">
+        <title>Integration developer - HACS</title>
+        <link href="../../css/bootstrap-custom.min.css" rel="stylesheet">
+        <link href="../../css/font-awesome.min.css" rel="stylesheet">
+        <link href="../../css/base.css" rel="stylesheet">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/github.min.css">
         <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
         <!--[if lt IE 9]>
@@ -19,8 +19,8 @@
             <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
         <![endif]-->
 
-        <script src="/hacs/js/jquery-1.10.2.min.js" defer></script>
-        <script src="/hacs/js/bootstrap-3.0.3.min.js" defer></script>
+        <script src="../../js/jquery-1.10.2.min.js" defer></script>
+        <script src="../../js/bootstrap-3.0.3.min.js" defer></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js"></script>
         <script>hljs.initHighlightingOnLoad();</script> 
     </head>
@@ -39,7 +39,7 @@
                         <span class="icon-bar"></span>
                         <span class="icon-bar"></span>
                     </button>
-                    <a class="navbar-brand" href="/hacs/.">HACS</a>
+                    <a class="navbar-brand" href="../..">HACS</a>
                 </div>
 
                 <!-- Expanded navigation -->
@@ -47,22 +47,22 @@
                         <!-- Main navigation -->
                         <ul class="nav navbar-nav">
                             <li >
-                                <a href="/hacs/.">Home</a>
+                                <a href="../..">Home</a>
                             </li>
                             <li class="dropdown">
                                 <a href="#" class="dropdown-toggle" data-toggle="dropdown">Installation <b class="caret"></b></a>
                                 <ul class="dropdown-menu">
                                     
 <li >
-    <a href="/hacs/installation/manual/">Manual</a>
+    <a href="../../installation/manual/">Manual</a>
 </li>
                                     
 <li >
-    <a href="/hacs/installation/terminal/">Terminal</a>
+    <a href="../../installation/terminal/">Terminal</a>
 </li>
                                     
 <li >
-    <a href="/hacs/installation/configuration/">Cofiguration</a>
+    <a href="../../installation/configuration/">Cofiguration</a>
 </li>
                                 </ul>
                             </li>
@@ -71,47 +71,47 @@
                                 <ul class="dropdown-menu">
                                     
 <li >
-    <a href="/hacs/usage/overview/">Overview</a>
+    <a href="../../usage/overview/">Overview</a>
 </li>
                                     
 <li >
-    <a href="/hacs/usage/store/">Store</a>
+    <a href="../../usage/store/">Store</a>
 </li>
                                     
 <li >
-    <a href="/hacs/usage/settings/">Settings</a>
+    <a href="../../usage/settings/">Settings</a>
 </li>
                                     
 <li >
-    <a href="/hacs/usage/repository/">Repository</a>
+    <a href="../../usage/repository/">Repository</a>
 </li>
                                     
 <li >
-    <a href="/hacs/usage/gallery/">Gallery</a>
+    <a href="../../usage/gallery/">Gallery</a>
 </li>
                                 </ul>
                             </li>
                             <li >
-                                <a href="/hacs/faq/">FAQ</a>
+                                <a href="../../faq/">FAQ</a>
                             </li>
-                            <li class="dropdown">
+                            <li class="dropdown active">
                                 <a href="#" class="dropdown-toggle" data-toggle="dropdown">Developer? <b class="caret"></b></a>
                                 <ul class="dropdown-menu">
                                     
 <li >
-    <a href="/hacs/developer/general/">General</a>
+    <a href="../general/">General</a>
+</li>
+                                    
+<li class="active">
+    <a href="./">Integration developer</a>
 </li>
                                     
 <li >
-    <a href="/hacs/developer/integration/">Integration developer</a>
+    <a href="../plugin/">Plugin developer</a>
 </li>
                                     
 <li >
-    <a href="/hacs/developer/plugin/">Plugin developer</a>
-</li>
-                                    
-<li >
-    <a href="/hacs/developer/include_default_repositories/">Include default repositories</a>
+    <a href="../include_default_repositories/">Include default repositories</a>
 </li>
                                 </ul>
                             </li>
@@ -121,8 +121,18 @@
                         </ul>
 
                     <ul class="nav navbar-nav navbar-right">
+                            <li >
+                                <a rel="next" href="../general/">
+                                    <i class="fa fa-arrow-left"></i> Previous
+                                </a>
+                            </li>
+                            <li >
+                                <a rel="prev" href="../plugin/">
+                                    Next <i class="fa fa-arrow-right"></i>
+                                </a>
+                            </li>
                             <li>
-                                <a href="https://github.com/custom-components/hacs/"><i class="fa fa-github"></i> GitHub</a>
+                                <a href="https://github.com/custom-components/hacs/edit/master/docs/developer/integration.md"><i class="fa fa-github"></i> Edit on GitHub</a>
                             </li>
                     </ul>
                 </div>
@@ -130,15 +140,56 @@
         </div>
 
         <div class="container">
+                <div class="col-md-3"><div class="bs-sidebar hidden-print affix well" role="complementary">
+    <ul class="nav bs-sidenav">
+        <li class="main active"><a href="#integration-developers">Integration developers</a></li>
+            <li><a href="#requirements">Requirements</a></li>
+    </ul>
+</div></div>
+                <div class="col-md-9" role="main">
 
-    <div class="row-fluid">
-      <div id="main-content" class="span12">
-        <h1 id="404-page-not-found" style="text-align: center">404</h1>
-        <p style="text-align: center"><strong>Page not found</strong></p>
-      </div>
-    </div>
+<h1 id="integration-developers">Integration developers<a class="headerlink" href="#integration-developers" title="Permanent link">&para;</a></h1>
+<p>A good template to use as a reference is <a href="https://github.com/custom-components/blueprint">blueprint</a></p>
+<h2 id="requirements">Requirements<a class="headerlink" href="#requirements" title="Permanent link">&para;</a></h2>
+<p>For a integration repository to be valid these are the requirements:</p>
+<h3 id="repository-structure">Repository structure<a class="headerlink" href="#repository-structure" title="Permanent link">&para;</a></h3>
+<ul>
+<li>There is only one integration (one directory under <code>ROOT_OF_THE_REPO/custom_components/</code>) pr. repository (if you have more, only the first one will be managed.)</li>
+<li>The integration (all the python files for it) are located under <code>ROOT_OF_THE_REPO/custom_components/INTEGRATION_NAME/</code></li>
+<li>There is only one integration (one directory under <code>ROOT_OF_THE_REPO/custom_components/</code>) per repository (if you have more, only the first one will be managed.)</li>
+<li>The integration and all the python files for it are located under <code>ROOT_OF_THE_REPO/custom_components/INTEGRATION_NAME/</code></li>
+</ul>
+<h4 id="ok-example">OK example:<a class="headerlink" href="#ok-example" title="Permanent link">&para;</a></h4>
+<pre><code class="text">custom_components/awesome/__init_.py
+custom_components/awesome/sensor.py
+custom_components/awesome/manifest.py
+info.md
+README.md
+</code></pre>
 
+<h4 id="not-ok-example-1">Not OK example (1):<a class="headerlink" href="#not-ok-example-1" title="Permanent link">&para;</a></h4>
+<pre><code class="text">awesome/__init_.py
+awesome/sensor.py
+awesome/manifest.py
+info.md
+README.md
+</code></pre>
 
+<h4 id="not-ok-example-2">Not OK example (2):<a class="headerlink" href="#not-ok-example-2" title="Permanent link">&para;</a></h4>
+<pre><code class="text">__init_.py
+sensor.py
+manifest.py
+info.md
+README.md
+</code></pre>
+
+<h3 id="manifestjson"><code>manifest.json</code><a class="headerlink" href="#manifestjson" title="Permanent link">&para;</a></h3>
+<p>In the integration directory, there is a <a href="https://developers.home-assistant.io/docs/en/creating_integration_manifest.html"><code>manifest.json</code></a> file.</p>
+<h3 id="github-releases-optional">GitHub releases (optional)<a class="headerlink" href="#github-releases-optional" title="Permanent link">&para;</a></h3>
+<h4 id="if-there-are-releases">If there are releases<a class="headerlink" href="#if-there-are-releases" title="Permanent link">&para;</a></h4>
+<p>When installing/upgrading it will scan the content in the latest release.</p>
+<h4 id="if-there-are-no-releases">If there are no releases<a class="headerlink" href="#if-there-are-no-releases" title="Permanent link">&para;</a></h4>
+<p>It will scan files in the branch marked as default.</p></div>
         </div>
 
         <footer class="col-md-12">
@@ -146,10 +197,10 @@
             <p>Documentation built with <a href="https://www.mkdocs.org/">MkDocs</a>.</p>
         </footer>
         <script>
-            var base_url = "/hacs",
+            var base_url = "../..",
                 shortcuts = {"help": 191, "next": 78, "previous": 80, "search": 83};
         </script>
-        <script src="/hacs/js/base.js" defer></script>
+        <script src="../../js/base.js" defer></script>
 
         <div class="modal" id="mkdocs_keyboard_modal" tabindex="-1" role="dialog" aria-labelledby="Keyboard Shortcuts Modal" aria-hidden="true">
     <div class="modal-dialog">
