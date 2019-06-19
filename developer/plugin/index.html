@@ -170,10 +170,11 @@ File name of one of the files: &quot;awesome-card.js&quot;
 <p>When searching for accepted files HACS will look in this order:</p>
 <ul>
 <li>The <code>dist</code>directory.</li>
-<li>On the latest release</li>
-<li>The root of the repository</li>
+<li>On the latest release.</li>
+<li>The root of the repository.</li>
 </ul>
 <p>All <code>.js</code> files it finds in the first location it finds one that matches the name will be downloaded.</p>
+<p>If your plugin require files that are not <code>js</code> files, use place all files (including the card file) in the <code>dist</code> directory.</p>
 <h3 id="github-releases-optional">GitHub releases (optional)<a class="headerlink" href="#github-releases-optional" title="Permanent link">&para;</a></h3>
 <h4 id="if-there-are-releases">If there are releases<a class="headerlink" href="#if-there-are-releases" title="Permanent link">&para;</a></h4>
 <p>When installing/upgrading it will scan the content in the latest release.</p>

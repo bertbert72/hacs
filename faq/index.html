@@ -188,6 +188,7 @@
 <p>The files are downloaded to <code>&lt;config_dir&gt;/custom_components/*</code></p>
 <h3 id="files-downloaded-for-plugins">Files downloaded for <code>plugins</code><a class="headerlink" href="#files-downloaded-for-plugins" title="Permanent link">&para;</a></h3>
 <p><em>Every <code>.js</code> file in the source directory, this can be on the release page, the <code>dist</code> directory, or the root of the repository.</em></p>
+<p><em>If it's the <code>dist</code> directory, it will download <strong>any</strong> file in that directory (and sub directories).</em></p>
 <p>When a <code>.js</code> file is downloaded, a compressed <code>.gz</code> version of if will be created, this file (if it exist) will be served to the requester to save transfer size/time.
 If you make local changes to a plugin in the <code>.js</code> file, delete the <code>.gz</code> variant to have HACS serve up that one.</p>
 <p>The files are downloaded to <code>&lt;config_dir&gt;/www/community/*</code></p>
