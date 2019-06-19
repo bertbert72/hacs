@@ -103,6 +103,10 @@
 </li>
                                     
 <li >
+    <a href="../../developer/appdaemon/">AppDaemon developer</a>
+</li>
+                                    
+<li >
     <a href="../../developer/integration/">Integration developer</a>
 </li>
                                     
@@ -156,7 +160,13 @@
 <h2 id="hacs-information">HACS Information<a class="headerlink" href="#hacs-information" title="Permanent link">&para;</a></h2>
 <p>At the top of the settings page you will see the current version of both HACS and Home Assistant.
 If there is an update to HACS you will get a notification above this section.</p>
-<p><img alt="settings" src="../../images/hacs_update.png" /></p>
+<p><img alt="hacs_update" src="../../images/hacs_update.png" /></p>
+<h3 id="hacs-option-display">HACS Option: <code>Display</code><a class="headerlink" href="#hacs-option-display" title="Permanent link">&para;</a></h3>
+<p>This setting changes how both "OVERVIEW" and "STORE" looks, you can choose between <code>Grid</code> and <code>Table</code>.</p>
+<h4 id="grid">Grid<a class="headerlink" href="#grid" title="Permanent link">&para;</a></h4>
+<p><img alt="grid" src="../../images/grid.png" /></p>
+<h4 id="table">Table<a class="headerlink" href="#table" title="Permanent link">&para;</a></h4>
+<p><img alt="table" src="../../images/table.png" /></p>
 <h2 id="add-custom-repositories">Add custom repositories<a class="headerlink" href="#add-custom-repositories" title="Permanent link">&para;</a></h2>
 <p>By default all elements that meet the requirements from these orgs are automatically added:</p>
 <ul>
@@ -166,13 +176,36 @@ If there is an update to HACS you will get a notification above this section.</p
 <p><a href="../../developer/include_default_repositories"><em>Developers can also add their repositories to be included by default</em></a></p>
 <p>But you can add any other repository that meets the requirements, to do so go to the "SETTINGS" tab.</p>
 <p><img alt="custom_repositories" src="../../images/custom_repositorylist.PNG" /></p>
-<p>Add the url to the repository under "CUSTOM REPOSITORIES" and select a type before clicking the "save icon".</p>
+<p>Add the url to the repository under "CUSTOM REPOSITORIES" and select a <code>type</code> before clicking the "save icon".</p>
+<table>
+<thead>
+<tr>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>Appdaemon</code></td>
+<td>Apps for AppDaemon</td>
+</tr>
+<tr>
+<td><code>Integration</code></td>
+<td>Integrations for Home Assistant (custom_components)</td>
+</tr>
+<tr>
+<td><code>Plugin</code></td>
+<td>Pugins for Lovelace (cards, mods, elements, rows and so on.)</td>
+</tr>
+</tbody>
+</table>
 <p>After adding a repository the repository will be scanned, if it can be tracked the element will show up under "STORE", and you will be redirected to that element.</p>
 <p>Want to get inspiration on what to add? Check out the <a href="https://www.awesome-ha.com/">Awesome Home Assistant list</a> it contains links to many custom_components (integrations) and custom_cards (plugins).</p>
 <p><em>If you have added a repository manually and that repository is subsequently added to the 'store' then that will be removed from the custom repository list.</em></p>
 <h2 id="hidden-repositories">Hidden repositories<a class="headerlink" href="#hidden-repositories" title="Permanent link">&para;</a></h2>
 <p>This is a list of all your hidden repositories.<br />
-Click the "+" icon to the left to unhide them.</p></div>
+Click the "+" icon to the left to unhide them.</p>
+<p><img alt="unhide" src="../../images/unhide.png" /></p></div>
         </div>
 
         <footer class="col-md-12">

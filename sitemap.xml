@@ -56,6 +56,11 @@
      <changefreq>daily</changefreq>
     </url>
     <url>
+     <loc>https://custom-components.github.io/hacs/developer/appdaemon/</loc>
+     <lastmod>2019-06-19</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+    <url>
      <loc>https://custom-components.github.io/hacs/developer/integration/</loc>
      <lastmod>2019-06-19</lastmod>
      <changefreq>daily</changefreq>
