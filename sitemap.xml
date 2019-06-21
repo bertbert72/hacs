@@ -86,6 +86,11 @@
      <changefreq>daily</changefreq>
     </url>
     <url>
+     <loc>https://custom-components.github.io/hacs/developer/blacklist_repository/</loc>
+     <lastmod>2019-06-21</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+    <url>
      <loc></loc>
      
      <changefreq>daily</changefreq>

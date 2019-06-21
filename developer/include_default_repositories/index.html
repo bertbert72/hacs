@@ -125,6 +125,10 @@
 <li class="active">
     <a href="./">Include default repositories</a>
 </li>
+                                    
+<li >
+    <a href="../blacklist_repository/">Blacklist a Repository</a>
+</li>
                                 </ul>
                             </li>
                             <li >
@@ -138,8 +142,8 @@
                                     <i class="fa fa-arrow-left"></i> Previous
                                 </a>
                             </li>
-                            <li class="disabled">
-                                <a rel="prev" >
+                            <li >
+                                <a rel="prev" href="../blacklist_repository/">
                                     Next <i class="fa fa-arrow-right"></i>
                                 </a>
                             </li>
@@ -164,6 +168,7 @@
 <p>Before you try to add your repository to the default store first make sure that it follows the requirements for that type that are listed below.</p>
 <p>Only the owner of the repository or a major contributor to it can submit a PR to have it included as a default.</p>
 <p>When all of this is covered, you can add it to <code>DEFAULT_REPOSITORIES</code> at the bottom of the <a href="https://github.com/custom-components/hacs/blob/master/custom_components/hacs/const.py"><code>const.py file</code></a></p>
+<p><em>NB!: The list is case sensitive.</em></p>
 <p>When a PR for this is merged, it will be a part of the next planned minor release (0.X.0), if no release is planed a release will be created about a week after the first addition.</p>
 <p><strong>Examples:</strong></p>
 <ul>
