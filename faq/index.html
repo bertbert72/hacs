@@ -115,6 +115,14 @@
 </li>
                                     
 <li >
+    <a href="../developer/python_script/">python_script developer</a>
+</li>
+                                    
+<li >
+    <a href="../developer/theme/">Theme developer</a>
+</li>
+                                    
+<li >
     <a href="../developer/include_default_repositories/">Include default repositories</a>
 </li>
                                 </ul>
@@ -152,6 +160,7 @@
             <li><a href="#how-does-it-work-installation">How does it work: Installation</a></li>
             <li><a href="#how-does-it-work-upgrade">How does it work: Upgrade</a></li>
             <li><a href="#how-can-i-install-this">How can I install this.</a></li>
+            <li><a href="#known-limitations">Known limitations</a></li>
     </ul>
 </div></div>
                 <div class="col-md-9" role="main">
@@ -162,9 +171,9 @@
 <p>Although "Store" is not "technically" correct, since nothing is sold, it's more like a marketplace? but "HACM" didn't have the same ring to it.</p>
 <h3 id="highlights-of-what-hacs-can-do">Highlights of what HACS can do<a class="headerlink" href="#highlights-of-what-hacs-can-do" title="Permanent link">&para;</a></h3>
 <ul>
-<li>Help you discover new integrations and plugins.</li>
-<li>Help you install (download) new integrations and plugins.</li>
-<li>Help you keep track of your integrations and plugins.</li>
+<li>Help you discover new custom elements.</li>
+<li>Help you install (download) new custom elements.</li>
+<li>Help you keep track of your custom elements.</li>
 </ul>
 <hr />
 <h2 id="is-this-for-hassio-only">Is this for hass.io only?<a class="headerlink" href="#is-this-for-hassio-only" title="Permanent link">&para;</a></h2>
@@ -192,12 +201,27 @@
 <p>When a <code>.js</code> file is downloaded, a compressed <code>.gz</code> version of if will be created, this file (if it exist) will be served to the requester to save transfer size/time.
 If you make local changes to a plugin in the <code>.js</code> file, delete the <code>.gz</code> variant to have HACS serve up that one.</p>
 <p>The files are downloaded to <code>&lt;config_dir&gt;/www/community/*</code></p>
+<h3 id="files-downloaded-for-python_script">Files downloaded for <code>python_script</code><a class="headerlink" href="#files-downloaded-for-python_script" title="Permanent link">&para;</a></h3>
+<p>The first file under the <code>python_scripts</code> directory._</p>
+<p>The files are downloaded to <code>&lt;config_dir&gt;/python_scripts/*</code></p>
+<h3 id="files-downloaded-for-theme">Files downloaded for <code>theme</code><a class="headerlink" href="#files-downloaded-for-theme" title="Permanent link">&para;</a></h3>
+<p>The first file under the <code>themes</code> directory._</p>
+<p>The files are downloaded to <code>&lt;config_dir&gt;/themes/*</code></p>
+<p>For this to work you need to include the themes directory like this:</p>
+<pre><code class="yaml">frontend:
+  themes: !include_dir_named themes
+</code></pre>
+
 <hr />
 <h2 id="how-does-it-work-upgrade">How does it work: Upgrade<a class="headerlink" href="#how-does-it-work-upgrade" title="Permanent link">&para;</a></h2>
 <p>The same as installation.</p>
 <hr />
 <h2 id="how-can-i-install-this">How can I install this.<a class="headerlink" href="#how-can-i-install-this" title="Permanent link">&para;</a></h2>
-<p>Look at the <a href="../installation/manual/">installation documentation.</a></p></div>
+<p>Look at the <a href="../installation/manual/">installation documentation.</a></p>
+<h2 id="known-limitations">Known limitations<a class="headerlink" href="#known-limitations" title="Permanent link">&para;</a></h2>
+<ul>
+<li>If you install/upgrade/remove or add a custom repository while the background task is running, do <strong>not</strong> restart Home Assistant until that task is done, if you do your action will not be saved.</li>
+</ul></div>
         </div>
 
         <footer class="col-md-12">
