@@ -167,9 +167,10 @@
 <p>As a developer you can now add your repository to be included in as a default repository in the store.</p>
 <p>Before you try to add your repository to the default store first make sure that it follows the requirements for that type that are listed below.</p>
 <p>Only the owner of the repository or a major contributor to it can submit a PR to have it included as a default.</p>
-<p>When all of this is covered, you can add it to <code>DEFAULT_REPOSITORIES</code> at the bottom of the <a href="https://github.com/custom-components/hacs/blob/master/custom_components/hacs/const.py"><code>const.py file</code></a></p>
+<p>When all of this is covered, you can add it to <code>DEFAULT_REPOSITORIES</code> at the bottom of the <a href="https://github.com/custom-components/hacs/blob/next/custom_components/hacs/const.py"><code>const.py file</code></a></p>
 <p><em>NB!: The list is case sensitive.</em></p>
 <p>When a PR for this is merged, it will be a part of the next planned minor release (0.X.0), if no release is planed a release will be created about a week after the first addition.</p>
+<p><em>Contributions for the integration should go against the <code>next</code> branch.</em></p>
 <p><strong>Examples:</strong></p>
 <ul>
 <li><a href="https://github.com/custom-components/hacs/pull/139"><code>AppDaemon App</code></a></li>
@@ -184,7 +185,7 @@
         </footer>
         <script>
             var base_url = "../..",
-                shortcuts = {"next": 78, "help": 191, "previous": 80, "search": 83};
+                shortcuts = {"help": 191, "next": 78, "previous": 80, "search": 83};
         </script>
         <script src="../../js/base.js" defer></script>
 
