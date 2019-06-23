@@ -6,7 +6,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         
         
-        <link rel="canonical" href="https://custom-components.github.io/hacs/next/installation/terminal/">
+        <link rel="canonical" href="https://custom-components.github.io/hacs/installation/terminal/">
         <link rel="shortcut icon" href="../../img/favicon.ico">
         <title>Terminal - HACS</title>
         <link href="../../css/bootstrap-custom.min.css" rel="stylesheet">
@@ -22,6 +22,7 @@
         <script src="../../js/jquery-1.10.2.min.js" defer></script>
         <script src="../../js/bootstrap-3.0.3.min.js" defer></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/languages/yaml.min.js"></script>
         <script>hljs.initHighlightingOnLoad();</script> 
     </head>
 
@@ -176,7 +177,16 @@ cp -r hacs_temp/custom_components/hacs hacs
 rm -R hacs_temp
 </code></pre>
 
-<p><a href="../configuration">You should now be done, next part will be to add it to your configuration.</a></p></div>
+<p><a href="../configuration">You should now be done, next part will be to add it to your configuration.</a></p>
+<!-- Disable sidebar -->
+
+<script>
+let sidebar = document.getElementsByClassName("col-md-3")[0];
+sidebar.parentNode.removeChild(sidebar);
+document.getElementsByClassName("col-md-9")[0].style['padding-left'] = "0";
+</script>
+
+<!-- Disable sidebar --></div>
         </div>
 
         <footer class="col-md-12">

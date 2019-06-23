@@ -6,7 +6,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         
         
-        <link rel="canonical" href="https://custom-components.github.io/hacs/next/usage/repository/">
+        <link rel="canonical" href="https://custom-components.github.io/hacs/usage/repository/">
         <link rel="shortcut icon" href="../../img/favicon.ico">
         <title>Repository - HACS</title>
         <link href="../../css/bootstrap-custom.min.css" rel="stylesheet">
@@ -22,6 +22,7 @@
         <script src="../../js/jquery-1.10.2.min.js" defer></script>
         <script src="../../js/bootstrap-3.0.3.min.js" defer></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/languages/yaml.min.js"></script>
         <script>hljs.initHighlightingOnLoad();</script> 
     </head>
 
@@ -209,7 +210,16 @@ This will only show for installed plugins.</p>
 <p>This will take you to the GitHub repository for the repository.</p>
 <h3 id="uninstall">Uninstall<a class="headerlink" href="#uninstall" title="Permanent link">&para;</a></h3>
 <p>This will delete the files on the file system and tell HACS that you do not want to keep tracking it.
-This will only show on installed repositories.</p></div>
+This will only show on installed repositories.</p>
+<!-- Disable sidebar -->
+
+<script>
+let sidebar = document.getElementsByClassName("col-md-3")[0];
+sidebar.parentNode.removeChild(sidebar);
+document.getElementsByClassName("col-md-9")[0].style['padding-left'] = "0";
+</script>
+
+<!-- Disable sidebar --></div>
         </div>
 
         <footer class="col-md-12">
